@@ -157,7 +157,6 @@ nav a:hover::after {
     height: 100px;
     object-fit: contain;
     border-radius: 5px;
-    background-color: white;
     padding: 10px;
 }
 
