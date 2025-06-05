@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             }).join('');
             
             card.innerHTML = `
-                <div class="project-info">
-                    <h2>${project.name}</h2>
-                </div>
                 <div class="project-content">
                     <div class="project-image">
+                        <div class="project-info">
+                            <h2>${project.name}</h2>
+                        </div>
                         <img src="Images/${projectNameNoSpaces}.png" alt="${project.name}" onerror="this.src='Images/placeholder.png'">
                     </div>
                     <div class="project-links" data-links="${links.length}">
