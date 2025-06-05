@@ -118,7 +118,7 @@ nav a:hover::after {
 .project-content {
     display: flex;
     gap: 0;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
     justify-content: center;
 }
@@ -131,17 +131,6 @@ nav a:hover::after {
     justify-content: center;
     gap: 1rem;
     width: 400px;
-    padding-right: 0;
-}
-
-.project-image::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: var(--primary-red);
 }
 
 .project-info h2 {
@@ -165,9 +154,20 @@ nav a:hover::after {
     gap: 1rem;
     min-width: 60px;
     justify-content: center;
-    flex: 0 0 auto;
-    align-self: center;
-    padding: 0 1rem;
+    flex: 1;
+    align-self: stretch;
+    padding: 0;
+    position: relative;
+}
+
+.project-links::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-red);
 }
 
 .project-links a {
