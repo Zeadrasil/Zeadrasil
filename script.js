@@ -54,15 +54,19 @@ document.addEventListener('DOMContentLoaded', async () => {
             }).join('');
             
             card.innerHTML = `
-                <div class="project-image">
-                    <img src="Images/${projectNameNoSpaces}.png" alt="${project.name}" onerror="this.src='Images/placeholder.png'">
-                </div>
-                <div class="project-links" data-links="${links.length}">
-                    ${linksHtml}
-                </div>
                 <div class="project-info">
                     <h2>${project.name}</h2>
-                    <p>${project.description.replace(/\\n/g, '<br>')}</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="Images/${projectNameNoSpaces}.png" alt="${project.name}" onerror="this.src='Images/placeholder.png'">
+                    </div>
+                    <div class="project-links" data-links="${links.length}">
+                        ${linksHtml}
+                    </div>
+                    <div class="project-description">
+                        <p>${project.description.replace(/\\n/g, '<br>')}</p>
+                    </div>
                 </div>
             `;
             
