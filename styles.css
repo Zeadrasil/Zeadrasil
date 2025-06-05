@@ -121,6 +121,7 @@ nav a:hover::after {
     align-items: stretch;
     width: 100%;
     justify-content: center;
+    min-height: 300px;
 }
 
 .project-image {
@@ -155,8 +156,8 @@ nav a:hover::after {
     width: 120px;
     justify-content: center;
     flex: 0 0 auto;
-    align-self: stretch;
-    padding: 0;
+    height: 100%;
+    padding: 1rem 0;
     position: relative;
 }
 
