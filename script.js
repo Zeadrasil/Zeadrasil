@@ -24,13 +24,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (project.github) links.push({ type: 'github', url: project.github });
             if (project.steam) links.push({ type: 'steam', url: project.steam });
             if (project.other1) links.push({ type: 'other1', url: project.other1 });
-            if (project.other2) links.push({ type: 'other2', url: project.other2 });
-            if (project.other3) links.push({ type: 'other3', url: project.other3 });
-            if (project.other4) links.push({ type: 'other4', url: project.other4 });
+            if (project.other2 && links.length < 4) links.push({ type: 'other2', url: project.other2 });
+            if (project.other3 && links.length < 4) links.push({ type: 'other3', url: project.other3 });
+            if (project.other4 && links.length < 4) links.push({ type: 'other4', url: project.other4 });
             
             // Create links HTML
             const linksHtml = links.map((link, index) => {
                 let imgSrc;
+                let others = 1;
                 switch(link.type) {
                     case 'itch':
                         imgSrc = 'Images/itchLogo.png';
@@ -42,7 +43,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         imgSrc = 'Images/SteamLogo.png';
                         break;
                     default:
-                        imgSrc = `Images/${projectNameNoSpaces} ${index - 2}.png`;
+                        imgSrc = `Images/${projectNameNoSpaces} ${others}.png`;
+                        others++;
                 }
                 return `
                     <a href="${link.url}" target="_blank" rel="noopener noreferrer">
