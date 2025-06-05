@@ -117,7 +117,7 @@ nav a:hover::after {
 
 .project-content {
     display: flex;
-    gap: 0;
+    gap: 1rem;
     align-items: stretch;
     width: 100%;
     justify-content: center;
@@ -173,6 +173,7 @@ nav a:hover::after {
     flex: 0 0 auto;
     height: fit-content;
     position: relative;
+    align-self: center;
 }
 
 .project-links::before {
