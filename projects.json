@@ -12,7 +12,7 @@
         "other4": ""
       },
       {
-        "name": "Perlex TD",
+        "name": "GenRun",
         "description": "Perlex TD is a 2D tower defense game built using Unity, showcasing a robust implementation of procedural map generation using Perlin noise. This technique creates an effectively infinite number of unique levels, each presenting distinct strategic challenges for the player. The game focuses on strategic tower placement, upgrade management, and adaptive defense against diverse enemy types and increasingly difficult wave patterns. \\n\\nTechnical Highlights: \\nProcedural Map Generation: Leverages Perlin noise algorithms for creating unique and varied level layouts, eliminating the need for manually designed levels and ensuring high replayability. \\nUnity Game Engine: Developed entirely within the Unity game engine, utilizing its robust features for 2D game development, including physics and UI systems. \\nEnemy AI: Implementation of sophisticated enemy AI with complex yet efficient pathfinding, creating dynamic and challenging gameplay. \\nTower Upgrade System: A well-structured tower upgrade system allowing players to customize their defenses and adapt to different enemy types and map layouts. \\nEfficient Resource Management: Optimized resource management to ensure smooth performance even with a large number of game objects and complex calculations.",
         "itch": "https://zeadrasil.itch.io/genrun",
         "github": "https://github.com/Zeadrasil/GenRun",
