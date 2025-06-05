@@ -149,6 +149,20 @@ nav a:hover::after {
     border: 2px solid var(--primary-red);
 }
 
+.project-description {
+    flex: 1;
+    border-right: 2px solid var(--primary-red);
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.project-description p {
+    margin: 0;
+}
+
 .project-links {
     display: flex;
     flex-direction: column;
@@ -164,7 +178,7 @@ nav a:hover::after {
 .project-links::before {
     content: '';
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     height: 100%;
     width: 2px;
@@ -187,20 +201,6 @@ nav a:hover::after {
     object-fit: contain;
     border-radius: 5px;
     padding: 10px;
-}
-
-.project-description {
-    flex: 1;
-    border-left: 2px solid var(--primary-red);
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 300px;
-}
-
-.project-description p {
-    margin: 0;
 }
 
 /* Adjust link layout based on number of links */
