@@ -303,4 +303,69 @@ nav a:hover::after {
         width: 200px;
         height: 200px;
     }
+}
+
+/* Skills Page Styles */
+.skills-section {
+    padding: 2rem 0;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.skill-item {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.1);
+    border-color: #ff0000;
+}
+
+.error-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+}
+
+.error-message h2 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.error-message p {
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .skill-item {
+        padding: 1rem;
+    }
 } 
