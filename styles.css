@@ -308,7 +308,7 @@ nav a:hover::after {
 /* Skills Page Styles */
 .skills-section {
     padding: 2rem 0;
-    min-height: calc(100vh - 60px); /* Account for navbar height */
+    min-height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
 }
@@ -316,13 +316,15 @@ nav a:hover::after {
 .skills-section h1 {
     margin-top: 0;
     padding-top: 2rem;
+    text-align: center;
+    color: var(--primary-red);
 }
 
 .section-description {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 2rem;
-    color: #888;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -346,7 +348,7 @@ nav a:hover::after {
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(255, 0, 0, 0.1);
-    border-color: #ff0000;
+    border-color: var(--primary-red);
 }
 
 .error-message {
@@ -364,7 +366,7 @@ nav a:hover::after {
 }
 
 .error-message p {
-    color: #888;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
